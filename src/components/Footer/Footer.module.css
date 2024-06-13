@@ -1,0 +1,61 @@
+.footer {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 0.6fr 0.8fr 1fr;
+  border-top: 2px solid black;
+}
+
+.logoContainer {
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
+  background-color: black;
+}
+
+.logo {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.ref {
+  font-size: 1.8rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 5rem;
+  gap: 10rem;
+}
+
+.description {
+  list-style-type: none;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.description > li {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  transition: 0.2s;
+}
+
+.description > li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.map {
+  border-right: 2px solid black;
+}

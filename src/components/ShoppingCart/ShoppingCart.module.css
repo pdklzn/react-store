@@ -1,0 +1,206 @@
+.cart {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 400;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.cart.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30vw;
+  height: 100vh;
+  overflow-y: scroll;
+  background: #ffffff;
+  transform: translateX(30vw);
+  transition: 0.3s;
+  padding-bottom: 3rem;
+}
+
+.content.active {
+  transform: translateX(0);
+}
+
+.title {
+  position: relative;
+  padding: 3rem;
+  background: #000;
+  color: white;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.close {
+  color: rgb(194, 192, 192);
+  position: absolute;
+  top: 3.5rem;
+  left: 2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.close:hover {
+  /* left: 2.2rem; */
+  color: white;
+}
+
+.img {
+  width: 100%;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empty {
+  font-size: 2rem;
+  padding: 5rem;
+}
+
+.product {
+  /* border-bottom: 1px solid rgb(173, 170, 170); */
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.product:before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 90%;
+  bottom: 0;
+  right: 5%;
+  background: #c0bcbc;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 0;
+  justify-content: center;
+}
+
+/* .size {
+} */
+
+.titleProduct {
+  font-size: 1.8rem;
+}
+
+/* .price {
+	font-weight: ;
+} */
+
+.count {
+  width: 8rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 1rem;
+  border: 1px solid black;
+}
+
+.remove {
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  width: 10px;
+  height: 10px;
+  opacity: 0.2;
+  cursor: pointer;
+  transition: opacity ease 0.2s;
+}
+
+.remove:hover {
+  opacity: 1;
+}
+
+.remove::before,
+.remove::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  display: block;
+  width: 15px;
+  height: 3px;
+  background: #000;
+}
+
+.remove::before {
+  transform: rotate(45deg);
+}
+
+.remove::after {
+  transform: rotate(-45deg);
+}
+
+.minus,
+.plus {
+  cursor: pointer;
+  color: #999797;
+  transition: 0.2s;
+}
+
+.minus:hover,
+.plus:hover {
+  color: #000000;
+}
+
+.sum {
+  /* margin-top: ; */
+  font-weight: 500;
+  padding: 5%;
+  font-size: 2rem;
+}
+
+.btn {
+  text-decoration: none;
+  text-align: center;
+  margin: auto 5%;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: rgb(103, 99, 99);
+  display: block;
+  padding: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background: none;
+  border: rgb(197, 194, 194) 2px solid;
+  /* justify-self: end; */
+  appearance: none;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background: yellow;
+}
+
+.btn:disabled {
+  color: rgb(103, 99, 99);
+  cursor: auto;
+  background: none;
+  border: rgb(197, 194, 194) 2px solid;
+}

@@ -1,0 +1,39 @@
+.selectProducts {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 0.7fr;
+  gap: 1rem;
+}
+
+.sectionSelect {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  background: linear-gradient(to bottom, #ffffff, #eaebaf, #f9f51a);
+}
+
+.img {
+  /* position: absolute; */
+  width: 100%;
+  transition: 0.2s;
+}
+
+.img:hover {
+  opacity: 0.9;
+}
+
+.description {
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 4rem;
+  font-size: 3rem;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.sectionSelect:hover .description {
+  opacity: 1;
+}

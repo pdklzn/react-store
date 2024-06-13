@@ -1,0 +1,6 @@
+.title {
+  text-align: center;
+  font-size: 4rem;
+  padding: 6rem;
+  background: linear-gradient(to top, rgb(0, 136, 255), rgb(71, 181, 241));
+}

@@ -1,0 +1,63 @@
+.title {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 7rem;
+  font-weight: 800;
+  /* letter-spacing: 5px; */
+}
+
+.subTitle {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  padding: 0.7rem;
+  width: 50rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  /* background-color: yellow; */
+}
+
+.text {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-name: toOpacity;
+  animation-fill-mode: forwards;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+  animation-duration: 3s;
+  /* animation-delay: 2s; */
+  animation-timing-function: ease-in-out;
+  animation-name: toRight;
+}
+
+@keyframes toOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes toRight {
+  from {
+    left: -150%;
+  }
+  to {
+    left: 0;
+  }
+}

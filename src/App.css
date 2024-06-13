@@ -1,0 +1,9 @@
+.container {
+  margin: 0 10px;
+}
+
+.active {
+  background: #4f4e4e;
+  color: #f8f5f5;
+  cursor: pointer;
+}

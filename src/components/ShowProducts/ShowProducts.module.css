@@ -1,0 +1,17 @@
+.showProducts {
+  margin: 5rem;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.products {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+  gap: 4rem;
+}
